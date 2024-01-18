@@ -1,10 +1,11 @@
 package Homework2.task4;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@NoArgsConstructor
 @Getter
 class Post {
     private int id;

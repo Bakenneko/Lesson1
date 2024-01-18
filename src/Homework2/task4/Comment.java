@@ -1,7 +1,10 @@
 package Homework2.task4;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor
 @Getter
 class Comment {
     private int id;
