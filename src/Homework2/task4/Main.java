@@ -26,7 +26,6 @@ public class Main {
             for (Post post : posts) {
                 if (comment.getId() == post.getId()) {
                     post.addComment(comment);
-                    break;
                 }
             }
         }
