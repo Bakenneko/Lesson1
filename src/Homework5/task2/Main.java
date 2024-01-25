@@ -1,4 +1,4 @@
-package Homework5.task2;
+//package Homework5.task2;
 
 //Створити клас автомобіля з полями:
 //Марка автомобля, потужність двигуна, власник, ціна, рік випуску.
@@ -10,23 +10,22 @@ package Homework5.task2;
 //Також спробуйте порахувати суму, яку потрібно потратити для покупки всіх цих авто
 //Все через stream API
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.function.ToDoubleFunction;
-
-public class Main {
-    public static void main(String[] args) {
-
-        List<Car> cars = new ArrayList<>();
-        cars.stream()
-                .limit(Math.round(cars.size() / 2))
-                .peek(car -> car.setPower(car.getPower() + 10))
-                .peek(car -> {
-                    Driver driver = car.getDriver();
-                    if (driver.getAge() > 25 && driver.getExp() < 1) {
-                        driver.setExp(driver.getExp()+1);
-                    }
-                })
-                .mapToDouble(car -> car.getPrice());
-    }
-}
+//import java.util.ArrayList;
+//import java.util.List;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//
+//        List<Car> cars = new ArrayList<>();
+//        cars.stream()
+//                .limit(Math.round(cars.size() / 2))
+//                .peek(car -> car.setPower(car.getPower() + 10))
+//                .peek(car -> {
+//                    Driver driver = car.getDriver();
+//                    if (driver.getAge() > 25 && driver.getExp() < 1) {
+//                        driver.setExp(driver.getExp()+1);
+//                    }
+//                })
+//                .mapToDouble(car -> car.getPrice());
+//    }
+//}
